@@ -2,7 +2,7 @@
 	<v-layout column justify-center align-center>
 		<v-flex xs12 sm8 md6>
 			<div class="text-xs-center"></div>
-			<v-img fluid :src="require('@/assets/towers3.png')"></v-img>
+			<v-img fluid height="400" :src="require('@/assets/app2.jpg')"></v-img>
 			<v-card>
 				<v-card-title class="headline">Protecting our future</v-card-title>
 				<v-card-text>

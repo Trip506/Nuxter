@@ -29,13 +29,13 @@ export default {
 		return {
 			items: [
 				{
-					src: require("@/assets/tower-construction0.jpg")
+					src: require("@/assets/app3.jpg")
 				},
 				{
-					src: require("@/assets/tower-construction1.jpg")
+					src: require("@/assets/app1.jpg")
 				},
 				{
-					src: require("@/assets/tower-construction2.jpg")
+					src: require("@/assets/app2.jpg")
 				}
 				// {
 				// 	src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg"

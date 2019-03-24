@@ -23,8 +23,11 @@
 			<v-btn icon @click.stop="fixed = !fixed">
 				<v-icon>remove</v-icon>
 			</v-btn>
-			<v-img fluid height="40" width="10" max-width="40" src="/faticon.ico"></v-img>
-			<v-toolbar-title v-text="title"/>
+
+			<v-img fluid height="40" width="10" max-width="40" src="/faticon.ico" @click="go('/')"></v-img>
+
+			<v-toolbar-title style="cursor:pointer;" @click="go('/')" v-text="title"/>
+			<h1>{{route}}</h1>
 			<v-spacer/>
 			<v-btn icon @click.stop="rightDrawer = !rightDrawer">
 				<v-icon>menu</v-icon>
@@ -45,14 +48,17 @@
 				</v-list-tile>
 			</v-list>
 		</v-navigation-drawer>
-		<v-footer :fixed="fixed" app>
-			<span>&copy; 2019</span>
-		</v-footer>
+
+		<Footer></Footer>
 	</v-app>
 </template>
 
 <script>
+import Footer from "../components/Footer.vue";
 export default {
+	components: {
+		Footer
+	},
 	data() {
 		return {
 			clipped: false,
@@ -84,8 +90,16 @@ export default {
 			miniVariant: false,
 			right: true,
 			rightDrawer: false,
-			title: "DI NO A LAS TORRES"
+			title: "Fuck Off Red Electrica"
 		};
+	},
+	methods: {
+		go(route) {
+			this.$router.push(route);
+		}
+		// route() {
+		// 	return this.$route.name;
+		// }
 	}
 };
 </script>
