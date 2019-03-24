@@ -21,6 +21,14 @@
 			<v-flex xs12>
 				<grids props="towers"></grids>
 			</v-flex>
+			<v-flex xs12>
+				<v-card color="white">
+					<v-toolbar color="info">
+						<h3>Upcoming events</h3>
+					</v-toolbar>
+					<calendar></calendar>
+				</v-card>
+			</v-flex>
 		</v-flex>
 	</v-layout>
 </template>
@@ -28,11 +36,13 @@
 <script>
 import Logo from "~/components/Logo.vue";
 import grids from "../components/grids.vue";
+import Calendar from "../components/Calendar.vue";
 import VuetifyLogo from "~/components/VuetifyLogo.vue";
 
 export default {
 	components: {
-		grids
+		grids,
+		Calendar
 	}
 };
 </script>
