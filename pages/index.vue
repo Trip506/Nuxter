@@ -1,8 +1,8 @@
 <template>
-	<v-layout column justify-center align-center>
+	<v-layout column justify-center>
 		<v-flex xs12 sm8 md6>
 			<div class="text-xs-center"></div>
-			<v-img fluid height="400" :src="require('@/assets/towers2.jpg')"></v-img>
+			<v-img fluid height="400" :src="require('@/assets/tower-construction0.jpg')"></v-img>
 			<v-card>
 				<!-- <v-card-title class="headline">Protecting our future</v-card-title> -->
 				<v-card-text>
@@ -18,9 +18,11 @@
 					<v-btn color="primary" flat nuxt to="/inspire">Continue</v-btn>
 				</v-card-actions>
 			</v-card>
+
 			<v-flex xs12>
 				<grids props="towers"></grids>
 			</v-flex>
+
 			<v-flex xs12>
 				<v-card color="white">
 					<v-toolbar color="info">

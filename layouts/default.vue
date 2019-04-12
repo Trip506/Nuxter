@@ -84,13 +84,18 @@ export default {
 					icon: "print",
 					title: "Posters",
 					to: "/posters"
+				},
+				{
+					icon: "info",
+					title: "Morocco",
+					to: "/morocco"
 				}
 			],
 
 			miniVariant: false,
 			right: true,
 			rightDrawer: false,
-			title: "Fuck Off Red Electrica"
+			title: "DI NO A LAS TORRES"
 		};
 	},
 	methods: {

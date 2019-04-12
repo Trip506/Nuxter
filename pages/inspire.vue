@@ -1,6 +1,6 @@
 <template>
-	<v-layout>
-		<v-flex text-xs-center>
+	<v-layout column justify-center>
+		<v-flex xs12 text-xs-center>
 			<v-carousel>
 				<v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src"></v-carousel-item>
 			</v-carousel>
@@ -20,11 +20,25 @@
 				</v-card-actions>
 			</v-card>
 		</v-flex>
+		<v-spacer></v-spacer>
+		<v-flex xs12 mt-5>
+			<v-card>
+				<v-layout row wrap align-content-space-between>
+					<v-flex d-flex xs4>
+						<BusinessCard c="sam" name="Sam Furneaux"></BusinessCard>
+					</v-flex>
+				</v-layout>
+			</v-card>
+		</v-flex>
 	</v-layout>
 </template>
 
 <script>
+import BusinessCard from "../components/BusinessCard.vue";
 export default {
+	components: {
+		BusinessCard
+	},
 	data() {
 		return {
 			items: [
